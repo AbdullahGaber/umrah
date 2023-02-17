@@ -77,6 +77,7 @@
     "discounts": "discounts",
     "vat": "Value Added Tax",
     "total_price": "Total Price",
+    "no_data": "There is currently no data",
     "discount_code": "Discount Code",
     "example": "example",
     "pay": "Pay",
@@ -129,5 +130,7 @@
     "order_paid_success": "Your order has been paid successfully, you can follow it through the notifications page, or the orders page.",
     "logout_confirm": "Do you want to log out?",
     "cancel": "cancel",
-    "package_required": "Please select a package"
+    "package_required": "Please select a package",
+    "login_required": "You must log in first",
+    "session_expired": "The session has expired, please log in again"
 }

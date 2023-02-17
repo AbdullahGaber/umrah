@@ -90,6 +90,7 @@
     "name": "الاسم",
     "attachment": "المرفقات",
     "giving_a_free_umrah": "إهداء عمرة للغير",
+    "no_data": "لا يوجد بيانات حاليا",
     "dedication": "إهداء",
     "umrah_package": "بكج العمرة",
     "choose_umrah_package": "اختار بكج العمرة",
@@ -129,5 +130,7 @@
     "order_payed_success": "تم دفع طلبك بنجاح، يمكنك متابعته من خلال من صفحة الاشعارات او من خلال صفحة الطلبات.",
     "logout_confirm": "هل ترغب بتسجيل الخروح؟",
     "cancel": "إلغاء",
-    "package_required": "يرجى اختيار البكج"
+    "package_required": "يرجى اختيار البكج",
+    "login_required": "يجب تسجيل الدخول أولا",
+    "session_expired": "انتهت الجلسة ، يرجى تسجيل الدخول مرة أخرى"
 }
