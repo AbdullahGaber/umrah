@@ -130,7 +130,18 @@
     "order_payed_success": "تم دفع طلبك بنجاح، يمكنك متابعته من خلال من صفحة الاشعارات او من خلال صفحة الطلبات.",
     "logout_confirm": "هل ترغب بتسجيل الخروح؟",
     "cancel": "إلغاء",
+    "new": "جديد",
+    "waiting": "قيد الإجراء",
+    "accepted": "مقبول",
+    "compeleted": "منتهى",
+    "refused": "مرفوضه",
+    "paid": "تم الدفع",
+    "active": "قيد الاجراء",
     "package_required": "يرجى اختيار البكج",
     "login_required": "يجب تسجيل الدخول أولا",
+    "order_created_successfully": "تم إنشاء الطلب بنجاح",
+    "filter": "الفلترة",
+    "all": "الكل",
+    "gift_requests": "طلبات الإهداء",
     "session_expired": "انتهت الجلسة ، يرجى تسجيل الدخول مرة أخرى"
 }
