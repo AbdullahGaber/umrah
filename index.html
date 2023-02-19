@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-<html>
-
-<head>
+<!DOCTYPE html><html><head>
   <!--
     If you are serving your web app in a path other than the root, change the
     href value below to reflect the base path you are serving from.
@@ -28,28 +25,41 @@
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="icon" type="image/png" href="favicon.png">
 
   <title>عمرة البدل</title>
   <link rel="manifest" href="manifest.json">
-  <script type="application/javascript" src="/assets/packages/flutter_inappwebview/assets/web/web_support.js"
-    defer></script>
+  <script type="application/javascript" src="/assets/packages/flutter_inappwebview/assets/web/web_support.js" defer=""></script>
   <script>
     // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = '3922454429';
+    var serviceWorkerVersion = '3453572743';
   </script>
   <!-- This script adds the flutter initialization JS code -->
-  <script src="flutter.js" defer></script>
+  <script src="flutter.js" defer=""></script>
+  <link rel="stylesheet" type="text/css" href="splash/style.css">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+  <script src="splash/splash.js"></script>
 </head>
 
 <body>
-
+  <div id="loading"></div>
   <script>
     window.addEventListener('load', function (ev) {
-      // Download main.dart.js
+      // Download main.dart.
+      var loading = document.querySelector('#loading');
+      loading.textContent = "رجاء الانتظار جاري التحميل ...." +" _____ "+ " Please wait, Loading ....";
+
+
       _flutter.loader.loadEntrypoint({
         serviceWorker: {
           serviceWorkerVersion: serviceWorkerVersion,
+        },
+        onEntrypointLoaded: async function (engineInitializer) {
+          loading.textContent = "Initializing engine...";
+          let appRunner = await engineInitializer.initializeEngine();
+
+          loading.textContent = "Running app...";
+          await appRunner.runApp();
         }
       }).then(function (engineInitializer) {
         return engineInitializer.initializeEngine();
@@ -81,6 +91,6 @@
       });
     }
   </script>
-</body>
 
-</html>
+
+</body></html>
