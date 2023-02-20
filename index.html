@@ -32,7 +32,7 @@
   <script type="application/javascript" src="/assets/packages/flutter_inappwebview/assets/web/web_support.js" defer=""></script>
   <script>
     // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = '3737516528';
+    var serviceWorkerVersion = '3124637409';
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer=""></script>
@@ -55,10 +55,10 @@
           serviceWorkerVersion: serviceWorkerVersion,
         },
         onEntrypointLoaded: async function (engineInitializer) {
-          loading.textContent = "Initializing engine...";
+          // loading.textContent = "Initializing engine...";
           let appRunner = await engineInitializer.initializeEngine();
 
-          loading.textContent = "Running app...";
+          // loading.textContent = "Running app...";
           await appRunner.runApp();
         }
       }).then(function (engineInitializer) {
