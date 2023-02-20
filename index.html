@@ -1,4 +1,7 @@
-<!DOCTYPE html><html><head>
+<!DOCTYPE html>
+<html>
+
+<head>
   <!--
     If you are serving your web app in a path other than the root, change the
     href value below to reflect the base path you are serving from.
@@ -16,7 +19,8 @@
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="هي شركة متخصصة لحجز الحج والعمرة للأفراد كما تختص بخدمة دفع تكاليف الحج والعمرة لغير القادرين.\n\nنمتلك تطبيقات على متجر ابل ستور ومتجر بلاي ستور، يمكنكم تصفح التطبيق من هذه الروابط:">
+  <meta name="description"
+    content="هي شركة متخصصة لحجز الحج والعمرة للأفراد كما تختص بخدمة دفع تكاليف الحج والعمرة لغير القادرين.\n\nنمتلك تطبيقات على متجر ابل ستور ومتجر بلاي ستور، يمكنكم تصفح التطبيق من هذه الروابط:">
 
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -29,10 +33,11 @@
 
   <title>عمرة البدل</title>
   <link rel="manifest" href="manifest.json">
-  <script type="application/javascript" src="/assets/packages/flutter_inappwebview/assets/web/web_support.js" defer=""></script>
+  <script type="application/javascript" src="/assets/packages/flutter_inappwebview/assets/web/web_support.js"
+    defer=""></script>
   <script>
     // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = '531111409';
+    var serviceWorkerVersion = '1217500751';
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer=""></script>
@@ -40,8 +45,29 @@
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
   <script src="splash/splash.js"></script>
 </head>
+<style>
+  .container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    /* Default Axis is X*/
+    justify-content: center;
+    /* Main Axis */
+    align-items: center;
+    /* Cross Axis */
+  }
 
-<body>
+  .indicator {
+    width: 50vw;
+  }
+</style>
+
+<body style="overflow: hidden">
+  <div id="loading_indicator" class="container">
+    <img class="indicator" src="./assets/loading.gif" />
+  </div>
+
+
   <!-- <div id="loading"></div> -->
   <script>
     window.addEventListener('load', function (ev) {
@@ -91,6 +117,18 @@
       });
     }
   </script>
+  <script>
+    window.onload = function () {
+      setTimeout(function () {
+        var loadingIndicator = document.getElementById("loading_indicator");
+        if (loadingIndicator) {
+          loadingIndicator.remove();
+        }
+      }, 30000);
+    };
+  </script>
 
 
-</body></html>
+</body>
+
+</html>
