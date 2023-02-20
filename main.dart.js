@@ -104903,7 +104903,8 @@ break
 case 1:return A.u(q,r)}})
 return A.v($async$xz,r)}}
 A.auM.prototype={
-$0(){this.a.M(t.b).x.it("/")},
+$0(){this.a.M(t.b).x.it("/")
+window.location.reload()},
 $S:5}
 A.wG.prototype={
 Y(){return new A.aam(B.j)}}
