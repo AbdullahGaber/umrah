@@ -6,7 +6,7 @@
     If you are serving your web app in a path other than the root, change the
     href value below to reflect the base path you are serving from.
 
-    The path provided below has to start and end with a slash "/" in order for
+    The path provided below has to start and end with a slash ""/" in order for
     it to work correctly.
 
     For more details:
@@ -37,7 +37,7 @@
     defer=""></script>
   <script>
     // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = '3495096728';
+    var serviceWorkerVersion = '1703446078';
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer=""></script>
@@ -46,25 +46,55 @@
   <script src="splash/splash.js"></script>
 </head>
 <style>
-  .container {
-    width: 100vw;
-    height: 100vh;
+  .loading {
     display: flex;
-    /* Default Axis is X*/
     justify-content: center;
-    /* Main Axis */
     align-items: center;
-    /* Cross Axis */
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
-
-  .indicator {
-    width: 50vw;
+  
+  .loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid blue;
+    border-right: 16px solid green;
+    border-bottom: 16px solid red;
+    border-left: 16px solid pink;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
   }
 </style>
-
 <body style="overflow: hidden">
-  <div id="loading_indicator" class="container">
+  <!-- <div id="loading_indicator" class="container">
     <img class="indicator" src="./assets/loading.gif" />
+  </div> -->
+  <div id="loading_indicator" class="loading">
+    <div class="loader"></div>
   </div>
 
 
@@ -73,7 +103,7 @@
     window.addEventListener('load', function (ev) {
       // Download main.dart.
       // var loading = document.querySelector('#loading');
-      // loading.textContent = "رجاء الانتظار جاري التحميل ...." +" _____ "+ " Please wait, Loading ....";
+      // loading.textContent = "رجاء الانتار جاري التحميل ...." +" _____ "+ " Please wait, Loading ....";
 
 
       _flutter.loader.loadEntrypoint({
