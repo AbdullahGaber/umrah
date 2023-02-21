@@ -123,6 +123,8 @@
     "status_required": "الحالة مطلوبة",
     "select_status": "اختر الحالة",
     "orders": "الطلبات",
+    "am": "ص",
+    "pm": "م",
     "request_free_umrah": "طلب عمرة مجانية",
     "personal_page": "الصفحة الشخصية",
     "wallet": "المحفظة",
@@ -145,5 +147,5 @@
     "gift_requests": "طلبات الإهداء",
     "session_expired": "انتهت الجلسة ، يرجى تسجيل الدخول مرة أخرى",
     "free_umrah": "عمرة مجانية",
-    "giving_free_umrah":"إهداء عمرة مجانية"
+    "giving_free_umrah": "إهداء عمرة مجانية"
 }

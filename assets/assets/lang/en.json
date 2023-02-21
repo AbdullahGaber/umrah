@@ -145,5 +145,7 @@
     "gift_requests": "Gift Requests",
     "session_expired": "The session has expired, please log in again",
     "free_umrah": "free umrah",
-    "giving_free_umrah": "Giving a free umrah"
+    "giving_free_umrah": "Giving a free umrah",
+    "am": "AM",
+    "pm": "PM"
 }
