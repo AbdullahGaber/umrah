@@ -111477,7 +111477,7 @@ A.amA.prototype={
 $2(a,b){var s,r,q,p,o=null,n="mobile_number",m=b.a===B.bc,l=$.k1().E3(0,0),k=m?$.oL():$.oK(),j=m?B.K:B.T,i=t.p,h=A.a([B.acp],i)
 if(m)B.c.P(h,A.a([B.ht],i))
 s=this.a
-h.push(A.by(A.a([new A.q_("icons/svg/twitter.svg",60,new A.amv(s),o),B.cx,new A.q_("icons/svg/facebook.svg",60,new A.amw(s),o),B.cx,new A.q_("icons/svg/instagram.svg",60,new A.amx(s),o),B.cx,new A.q_("icons/svg/whatsapp.svg",60,new A.amy(s),o)],i),B.n,B.m,B.l))
+h.push(A.by(A.a([new A.q_("assets/icons/svg/twitter.svg",60,new A.amv(s),o),B.cx,new A.q_("assets/icons/svg/facebook.svg",60,new A.amw(s),o),B.cx,new A.q_("assets/icons/svg/instagram.svg",60,new A.amx(s),o),B.cx,new A.q_("assets/icons/svg/whatsapp.svg",60,new A.amy(s),o)],i),B.n,B.m,B.l))
 j=A.AK(h,B.n,j,o,B.bm,B.l,o,o,B.p)
 h=this.b
 s=A.by(A.a([A.cj(A.XB(h.y,o,o,"full_name",o,o,1,!1,o,!1,o,!1,A.aiC()),1),A.cj(new A.aG(l,A.azY(h.as,n,h.at,m,h.grA(),A.b2q(),!1,n,!1),o),1)],i),B.n,B.m,B.l)
